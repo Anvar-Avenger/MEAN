@@ -1,0 +1,14 @@
+<div class="quti">
+  <h2>Ro&#8216;yxatga olish shakli</h2>
+  <form (submit)="kiritish()" class="shakl">
+    <div class="xatolik" *ngIf="message.visible">
+      <span>{{message.text}}</span>
+    </div>
+    <input type="text" [(ngModel)]="name" name="name" class="shakl-maydoni" placeholder="Ismni kiriting">
+    <input type="text" [(ngModel)]="username" name="username" class="shakl-maydoni" placeholder="Foydalanvchi nomini kitiring">
+    <input type="password" [(ngModel)]="password" name="password" class="shakl-maydoni" placeholder="Parolni kiriting">
+    <div class="tugmalar">
+      <button class="tugma tugma-yashil" type="submit">Ro&#8216;yxatga olish</button>
+    </div>
+  </form>
+</div>

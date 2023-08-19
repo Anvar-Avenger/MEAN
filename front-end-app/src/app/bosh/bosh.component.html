@@ -1,0 +1,28 @@
+<div class="quti">
+  <h1>Bosh sahifa</h1>
+</div>
+
+<div class="quti">
+  <h2>{{title}}</h2>
+  <h4><mark>Avtomobil</mark>: {{car.name}} {{car.model}}</h4>
+  <div class="bildirishlar">
+    Mashina haqida:
+    <ul>
+      <li>Tezligi: <strong>{{car.speed}}</strong> km/soat</li>
+      <li>Mashina rangi: <strong>{{car.design.car}}</strong></li>
+      <li>Salon rangi: <strong>{{car.design.solon}}</strong></li>
+      <li>G&#8216;ildirak: <strong>{{car.design.wheels}}</strong></li>
+    </ul>
+  </div>
+
+  <h4>Avtomobil imkoniyatlari</h4>
+  <div class="bildirishlar bildirish-oddiy">
+    <ul>
+      <li *ngFor="let convenience of car.conditions">{{convenience}}</li>
+    </ul>
+  </div>
+
+  <h4>Avtomobilni tanlang</h4>
+  <button *ngFor="let car of cars" class="tugma tugma-ochiq-qizil" (click)="selectCar(car.name)">{{car.name}}</button>
+  <!-- <button class="tugma tugma-kok" (click)="selectCar('BMW')">BMW</button> -->
+</div>

@@ -1,0 +1,82 @@
+.bildirishlar {
+    width: 50%;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  ul {
+    padding: 0 8px;
+  }
+  li {
+    list-style: none;
+  }
+  
+  .tt-2 {
+    margin-top: 32px;
+  }
+  
+  .kirish {
+    display: block;
+    position: relative;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #dddddd;
+  }
+  
+  label {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+  }
+  
+  .tugma {
+    margin-top: 10px;
+    margin-bottom: 16px;
+  }
+  
+  .ochirish {
+    display: inline-flex;
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    color: #adb5bd;
+  }
+  
+  .tugma-belgisi {
+    fill: currentColor;
+    display: block;
+    padding: 8px;
+    margin-left: 10px;
+    background-image: url(./rasmlar/marta.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  .tugma-qizil {
+    background-color: #ffffff;
+    border-color: #6c757d;
+    color: #6c757d;
+    margin-bottom: 5px;
+    margin-top: 16px;
+  }
+  
+  .tugma-qizil:hover {
+    background-color: #6c757d;
+    color: #ffffff;
+  }
+  

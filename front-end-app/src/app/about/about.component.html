@@ -1,0 +1,36 @@
+<div class="quti">
+  <h1 class="text-center">Dasturchilar</h1>
+
+  <span>Ismi: <strong>{{developer.name}}</strong></span>
+  <br>
+  <span>Familiyasi: <strong>{{developer.surname}}</strong></span>
+  <br><br>
+
+  <button class="tugma tugma-qizil" (click)="edit()">Tahrirlash</button>
+  <form *ngIf="isEditing">
+    <h3>Yartuvchini tahrirlash</h3>
+    <!--  Buni ishga tushirishdan oldin app.module.ts fayliga @angular/forms chaqirish va import jadvali uni qo'shing  -->
+    <input type="text" name="developer.ism" class="kirish" placeholder="Ism" [(ngModel)]="developer.name"><br>
+    <input type="text" name="developer.familiyasi" class="kirish" placeholder="Familiyasi"
+      [(ngModel)]="developer.surname">
+  </form>
+</div>
+
+<div class="quti tt-2">
+  <h3>Foydalanuvchilar</h3>
+  <form (submit)="add(ism.value)">
+    <div class="elementlar">
+      <label for="ism">Foydalanuvchi ismi</label>
+      <input type="text" id="ism" #ism class="kirish" placeholder="Ismni kiriting">
+      <button type="submit" class="tugma tugma-ochiq-qizil">Qo&#8216;shish</button>
+    </div>
+  </form>
+  <div class="bildirishlar bildirish-oddiy">
+    <ul>
+      <li *ngFor="let user of users; let raqam = index;">
+        {{raqam + 1}}) {{user.name}}
+        <button (click)="remove(user.id)" class="ochirish"><i class="tugma-belgisi"></i></button>
+      </li>
+    </ul>
+  </div>
+</div>

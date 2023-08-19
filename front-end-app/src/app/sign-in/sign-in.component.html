@@ -1,0 +1,14 @@
+<div class="quti">
+  <h2>Ro&#8216;yxatga olish shakli</h2>
+  <form (submit)="signIn()" class="shakl">
+    <div class="xatolik" *ngIf="message.show">
+      <span>{{message.text}}</span>
+    </div>
+    <input type="text" [(ngModel)]="name" name="name" class="shakl-maydoni" placeholder="Foydalanvchi nomini kitiring">
+    <input type="password" [(ngModel)]="password" name="password" class="shakl-maydoni" placeholder="Parolni kiriting">
+    <div class="tugmalar">
+      <button class="tugma tugma-yashil" type="submit">Tizimga kirish</button>
+      <a routerLink="/yangi" class="ml-2 tugma tugma-yashil">Ro&#8216;yxatdan o&#8216;tish</a>
+    </div>
+  </form>
+</div>

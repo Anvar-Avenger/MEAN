@@ -1,0 +1,9 @@
+<header class="tepasi">
+    <h2 class="sayt-nomi">Sayt</h2>
+    <nav class="menyu">
+        <a routerLink="/" class="i-8 havola">Boshi</a>
+        <a routerLink="/haqida" class="i-8 havola">Haqida</a>
+    </nav>
+    <a routerLink="/ishmaydon" class="tugma tugma-qizil" *ngIf="auth.isSessionActive()">Shaxsiy sahifa</a>
+    <a routerLink="/kirish" class="tugma tugma-qizil to-1" *ngIf="!auth.isSessionActive()">Kirish</a>
+</header>

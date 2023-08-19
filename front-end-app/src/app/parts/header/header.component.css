@@ -1,0 +1,47 @@
+.tepasi {
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  padding: 16px 24px;
+  margin-bottom: 16px;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgb(222, 226, 230);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.075);
+}
+
+.havola {
+  font-size: 16px;
+  color: #000000;
+}
+
+.havola:hover {
+  text-decoration: underline;
+}
+
+h5 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.tepasi h5 {
+  margin-right: auto;
+  font-size: 20px;
+}
+
+.tepasi .menyu {
+  margin-right: 16px;
+}
+
+/* Qiymatlar */
+.i-8 {
+  padding: 8px;
+}
+
+.it-3,
+.ip-3 {
+  padding: 48px 0;
+}
+
+.tp-8 {
+  margin-bottom: 8px;
+}
